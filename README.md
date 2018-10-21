@@ -3,7 +3,7 @@
 中秋做的一个活动，可以到这里预览  
 [http://tuziel.com/demo/mid_autumn_2018/](http://tuziel.com/demo/mid_autumn_2018/)
 
-图片资源因为不是我的所以不能传啦
+图片资源因为不是我的所以不能传啦，所以整个仓库都得重新开始了
 
 ## 安装项目
 
