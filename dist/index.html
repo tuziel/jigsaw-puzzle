@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>中秋贴图小游戏</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/page.css" rel="stylesheet">
+    <link href="./media/icon/favicon.ico" rel="shortcut icon" type="image/ico" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="pageLoad" class="page">
+            <div id="progress">
+                <img class="loading-banner" src="./media/pages/loading-banner.png" alt="loading">
+                <div class="progressbar">
+                    <img src="./media/pages/progress-back.png" alt="progress-back">
+                    <img id="progressLength" src="./media/pages/progress-font.png" alt="progress-font">
+                </div>
+                <div id="progressText"></div>
+            </div>
+        </div>
+        <div id="pageCover" class="page">
+            <img class="cover" src="./media/pages/cover.jpg" alt="封面">
+            <div id="enter"><img src="./media/pages/btn-enter.png" alt="立即制作"></div>
+        </div>
+        <div id="pageMain" class="page">
+            <div id="content">
+                <div id="pictures"></div>
+                <div id="pictureControl">
+                    <div id="picBox"></div>
+                    <div id="picRotate" class="pic-btn"><img src="./media/icon/rotate@2x.png" width="64" alt="旋转"></div>
+                    <div id="picDelete" class="pic-btn"><img src="./media/icon/close@2x.png" width="64" alt="删除"></div>
+                    <div id="picScale" class="pic-btn"><img src="./media/icon/scale@2x.png" width="64" alt="缩放"></div>
+                    <div id="picMirror" class="pic-btn"><img src="./media/icon/mirror@2x.png" width="64" alt="翻转"></div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div id="undo" class="side-btn">
+                    <img src="./media/icon/undo@2x.png" width="42" alt="撤销">
+                    <div>撤销</div>
+                </div>
+                <div id="redo" class="side-btn">
+                    <img src="./media/icon/redo@2x.png" width="42" alt="还原">
+                    <div>还原</div>
+                </div>
+                <div id="save" class="side-btn">
+                    <img src="./media/icon/save@2x.png" width="42" alt="完成">
+                    <div>完成</div>
+                </div>
+                <div id="sidebarTrigger" class="side-btn">
+                    <div class="icon-sidebar-switch"></div>
+                </div>
+            </div>
+            <div class="bottombar">
+                <div id="navTrigger">
+                    <div class="icon-nav-switch"></div>
+                </div>
+                <div class="nav" id="nav"></div>
+                <div class="selector" id="selector"></div>
+            </div>
+        </div>
+        <div id="pageHelp" class="page">
+            <div id="helpSkip">跳过指引>></div>
+        </div>
+        <div id="shortcut" class="page">
+            <canvas id="painter" width="750" height="1206"></canvas>
+            <div id="shortcutImage"></div>
+            <div id="shortcutTips"><img src="./media/help/help-save.png" alt=""></div>
+        </div>
+    </div>
+
+    <script src="./vendor/jquery-3.3.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
